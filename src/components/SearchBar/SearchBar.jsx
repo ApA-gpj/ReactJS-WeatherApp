@@ -4,7 +4,7 @@ import { useState } from 'react';
 const SearchBar = ({ updateSearchData }) => {
 
   const [searchValue, setSearchValue] = useState('');
-  const searchedData = `http://api.weatherstack.com/current?access_key=bee261edd16ebb9dbe08656ee3d602cc&query=${searchValue.toLowerCase()}`;
+  const searchedData = `https://api.weatherstack.com/current?access_key=bee261edd16ebb9dbe08656ee3d602cc&query=${searchValue.toLowerCase()}`;
 
   const submitHandler = async (e) => {
     e.preventDefault();
